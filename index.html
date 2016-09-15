@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <style type="text/css">
+          .button {
+ 
+			 width: 150px; 
+			 border: 1px solid transparent; 
+			 padding: 10px; 
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+      </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Fast vtu Results clone</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="file.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target="#my-navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navabar">
+       <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a href="#" class="navbar-brand logo-position-class"><button id="logobutton"><b>inspiron</b></button></a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+                <div class="list-position">
+                     <ul class="nav navbar-nav list-allign">
+                         <li><a href="#Home"><b class="box button"><span>Home</span></b></a></li>          
+                            <li><a href="#feedback"><b class="box">Feedback</b></a></li>
+                            <li><a href="#vtucollege"><b class="box">College Codes</b></a></li>
+                            <li><a href="#notes"><b class="box">Notes</b></a></li>
+      
+                                  <!-- add search form -->
+                              <div class="search-position">                        
+                                <li><a href="#search">
+                                     <!-- add search form -->
+                                    <form class="navbar-right" role="search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search for Results">
+                                        <span class="input-group-btn">
+                                            <button type="submit" class="btn btn-default">
+                                            <span class="glyphicon glyphicon-search"></span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                    </form>
+                                </a>
+                                </li>
+                              </div> 
+                     </ul>          
+               </div>   
+          </div>
+        </div>  
+    </nav>
+
+    <!----------------------------------------slider------------------------------>
+
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+  <!-- Overlay -->
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+    <div class="overlay"></div>
+      <div class="slide-1"></div>
+      <div class="hero">
+        <hgroup>
+            <h2>We are creative</h2>        
+        </hgroup>
+        <div class="upperlayer">
+        <button class="btn btn-hero btn-lg" role="button">See all features</button>
+        </div>
+        
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="overlay"></div>
+      <div class="slide-2"></div>
+      <div class="hero">        
+        <hgroup>
+            <h2>PACE</h2>        
+            <h3></h3>
+        </hgroup>       
+        <a class="btn btn-warning btn-lg " role="button">Website</a>
+      </div>
+    </div>
+    <div class="item slides">
+    <div class="overlay"></div>
+      <div class="slide-3"></div>
+      <div class="hero">        
+        <hgroup>
+            <h2>We are amazing</h2>        
+        </hgroup>
+        <div class="upperlayer">
+        <button class="btn btn-hero btn-lg" role="button">See all features</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<!---------------------------------------->
+
+<div class="col-md-6">
+  <div class="item active">
+      <blockquote>
+              <div class="row">
+                    <div class="col-md-offset-2 text-justify">
+                       <br><br><br><br> <p>One of the main objects of education is to train the recipient for the battle of life. The greatest drawback in education is the omission to give practical training in the use of machine tools needed for Industrialization.
+                       </p>
+                    <small>Sir M. Visvesvaraya </small>
+                    </div>
+              </div>
+      </blockquote>
+  </div>
+</div>
+
+
+<!-----------Result by name form------>
+
+<div class="col-md-6 ">
+<div class="form-left-space">
+<div class="container text-size-class" >
+        <div>
+          <h3><small><b><br> Results By Name:</b><br><br></small></h3>
+        </div><!-- End Page Header -->
+</div>
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="name">Name:</label>  
+  <div class="col-md-8">
+  <input id="name" name="name" placeholder="Student name" class="form-control input-md" type="text">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="branch">Branch:</label>
+  <div class="col-md-8">
+    <select id="branch" name="branch" class="form-control">
+      <option value="1">Option one</option>
+      <option value="2">Option two</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="college">College:</label>
+  <div class="col-md-8">
+    <select id="college" name="college" class="form-control">
+      <option value="1">Option one</option>
+      <option value="2">Option two</option>
+    </select>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+    <button id="submit" name="submit" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+</fieldset>
+</form>
+</div>
+</div><!---end form-->
+
+<!--- footer-->
+<footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <ul class="social-network social-circle">
+                             <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                             <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                             <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                             <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                             <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                            Supported by: Department of Computer Science, PACE | FSMK
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+      <script src="bootstrap/js/jquery.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
